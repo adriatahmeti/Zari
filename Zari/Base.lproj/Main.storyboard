@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Zari" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Zdv-9p-ZRD">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zari6" translatesAutoresizingMaskIntoConstraints="NO" id="m5Q-bK-qCM">
+                                <rect key="frame" x="214.66666666666663" y="238" width="184.33333333333337" height="219"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="165" id="B2j-Op-pmD"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="165" id="Ow1-KT-K5m"/>
+                                    <constraint firstAttribute="height" constant="150" id="rhj-Bu-Pnf"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zari3" translatesAutoresizingMaskIntoConstraints="NO" id="yVD-Ng-4S9">
+                                <rect key="frame" x="15" y="238" width="184.66666666666666" height="219"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="HRk-Zm-UUJ"/>
+                                    <constraint firstAttribute="width" constant="165" id="S6G-nu-Erz"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="165" id="vSg-fA-g07"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="udr-2C-LFv">
+                                <rect key="frame" x="114" y="556" width="185" height="60"/>
+                                <color key="backgroundColor" red="0.5093613568245009" green="0.92272763324873097" blue="0.87299152138046088" alpha="0.34859267979452052" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="146" id="MLf-Ih-syb"/>
+                                    <constraint firstAttribute="height" constant="60" id="ssj-HI-lyb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="PLAY">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YBk-XY-JNp"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Nlm-3K-rg3">
+                                <rect key="frame" x="60" y="45" width="294" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="kfU-2S-bIt"/>
+                                    <constraint firstAttribute="width" constant="255" id="qv0-Sh-7Aq"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="yVD-Ng-4S9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="3od-fd-ThZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="udr-2C-LFv" secondAttribute="trailing" constant="115" id="5s3-km-Flq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Nlm-3K-rg3" secondAttribute="trailing" constant="60" id="5v1-fx-pjA"/>
+                            <constraint firstItem="m5Q-bK-qCM" firstAttribute="leading" secondItem="yVD-Ng-4S9" secondAttribute="trailing" constant="15" id="APz-ri-azR"/>
+                            <constraint firstItem="udr-2C-LFv" firstAttribute="top" secondItem="yVD-Ng-4S9" secondAttribute="bottom" constant="99" id="C86-Mg-4k5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="udr-2C-LFv" secondAttribute="bottom" constant="120" id="JaH-z7-xTc"/>
+                            <constraint firstItem="m5Q-bK-qCM" firstAttribute="height" secondItem="yVD-Ng-4S9" secondAttribute="height" id="Lia-f2-a6j"/>
+                            <constraint firstItem="udr-2C-LFv" firstAttribute="top" secondItem="m5Q-bK-qCM" secondAttribute="bottom" constant="99" id="SWz-GR-8D0"/>
+                            <constraint firstItem="Zdv-9p-ZRD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="YO3-hn-ENq"/>
+                            <constraint firstItem="yVD-Ng-4S9" firstAttribute="top" secondItem="Nlm-3K-rg3" secondAttribute="bottom" constant="65" id="ZGV-Ib-eA1"/>
+                            <constraint firstItem="Zdv-9p-ZRD" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="fjS-89-d98"/>
+                            <constraint firstItem="Zdv-9p-ZRD" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="hQJ-7K-nfJ"/>
+                            <constraint firstItem="udr-2C-LFv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="114" id="lgX-Ig-97o"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="m5Q-bK-qCM" secondAttribute="trailing" constant="15" id="lsH-9n-j7x"/>
+                            <constraint firstItem="Zdv-9p-ZRD" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="nbN-yy-Opd"/>
+                            <constraint firstItem="Nlm-3K-rg3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="qXo-4A-AMX"/>
+                            <constraint firstItem="m5Q-bK-qCM" firstAttribute="top" secondItem="Nlm-3K-rg3" secondAttribute="bottom" constant="65" id="t2w-q5-qly"/>
+                            <constraint firstItem="Nlm-3K-rg3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="tcH-bH-lme"/>
+                            <constraint firstItem="m5Q-bK-qCM" firstAttribute="width" secondItem="yVD-Ng-4S9" secondAttribute="width" id="wtU-5P-gZe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="fotoZari1" destination="yVD-Ng-4S9" id="aUR-5u-gE3"/>
+                        <outlet property="fotoZari2" destination="m5Q-bK-qCM" id="sas-ci-upf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-79.200000000000003" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="444" height="414"/>
+        <image name="logo" width="196" height="128"/>
+        <image name="zari3" width="100" height="100"/>
+        <image name="zari6" width="100" height="100"/>
+    </resources>
+</document>
